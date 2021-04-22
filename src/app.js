@@ -5,7 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
+function random() {
   var figuras = ["♦", "♥", "♠", "♣"];
   var numeros = [
     "A",
@@ -39,5 +39,18 @@ window.onload = function() {
     figura.style.color = "red";
     figuraInv.style.color = "red";
     numero.style.color = "red";
+  } else {
+    figura.style.color = "black";
+    figuraInv.style.color = "black";
+    numero.style.color = "black";
   }
+}
+
+window.onload = function() {
+  random();
+
+  let btn = this.document.querySelector(".btn");
+  btn.addEventListener("click", function() {
+    random();
+  });
 };
