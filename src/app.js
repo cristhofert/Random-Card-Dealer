@@ -52,8 +52,19 @@ window.onload = function() {
     random();
   }, 10000);
 
-  let btn = this.document.querySelector(".btn");
+  let btn = document.querySelector(".btn");
   btn.addEventListener("click", function() {
     random();
+  });
+
+  let form = document.querySelector(".form-inline");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let card = document.querySelector("#card");
+    let inputWidth = document.querySelector(".form-inline #width");
+    let inputHeigth = document.querySelector(".form-inline #height");
+    card.style.width = `${inputWidth.value}px`;
+    card.style.height = `${inputHeigth.value}px`;
   });
 };

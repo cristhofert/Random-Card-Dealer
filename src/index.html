@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Dealer in Javascript, HTML and CSS</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container bg-white d-flex flex-column justify-content-between">
+    <div class="container bg-white d-flex flex-column justify-content-between" id="card">
       <div class="figura">
         <h1>♠</h1>
       </div>
@@ -26,6 +26,17 @@
     </div>
     <div class="d-flex justify-content-center m-2">
       <buttom class="btn btn-primary">New Card</buttom>
+      <form class="form-inline">
+        <div class="form-group ml-2">
+          <input type="number" name="width" id="width" class="form-control" value="300" />
+        </div>
+        <div class="form-group ml-2">
+          <input type="number" name="height" id="height" value="400" class="form-control"/>
+        </div>
+
+          <button type="submit" class="btn btn-primary ml-2" >Redimencionar</button>
+        
+      </div>
     </div>
   </body>
 </html>
