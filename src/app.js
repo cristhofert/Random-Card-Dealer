@@ -48,6 +48,9 @@ function random() {
 
 window.onload = function() {
   random();
+  setInterval(() => {
+    random();
+  }, 10000);
 
   let btn = this.document.querySelector(".btn");
   btn.addEventListener("click", function() {
